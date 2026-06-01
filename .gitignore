@@ -1,0 +1,17 @@
+﻿# 不上传构建产物到源码区
+*.apk
+*.aab
+*.exe
+*.zip
+*.7z
+*.rar
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 日志/临时文件
+*.log
+*.tmp
