@@ -1,0 +1,8 @@
+{
+  "platform": "windows",
+  "version": "v1.1",
+  "fileName": "SamsungFirmwareDownloaderWindows-v1.1.exe",
+  "downloadUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/download/v0.1.2/SamsungFirmwareDownloaderWindows-v1.1.exe",
+  "releaseUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/tag/v0.1.2",
+  "notes": "Windows release package. This repository only provides release downloads and update metadata."
+}
