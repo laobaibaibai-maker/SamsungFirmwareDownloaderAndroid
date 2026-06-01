@@ -1,11 +1,12 @@
-﻿# 三星固件下载工具 Android
+# 三星固件下载工具发布页
 
-这是“三星固件下载工具 Android”的公开发布页。
+这是“三星固件下载工具”的公开发布页。
 
 本仓库仅用于：
 
-- 发布新版 APK
-- 提供在线更新检测入口
+- 发布 Android APK
+- 发布 Windows EXE
+- 提供 Android 在线更新检测入口
 - 展示使用说明
 - 展示免责声明
 
@@ -13,21 +14,20 @@
 
 ## 下载
 
-请前往 GitHub Releases 下载最新版 APK：
+请前往 GitHub Releases 下载最新版：
 
 https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/latest
 
-当前版本：`v0.1.2`
-
-APK 文件：
+当前发布内容：
 
 ```text
-SamsungFirmwareDownloaderAndroid-v0.1.2.apk
+Android: SamsungFirmwareDownloaderAndroid-v0.1.2.apk
+Windows: SamsungFirmwareDownloaderWindows-v1.1.exe
 ```
 
-## 在线更新说明
+## Android 在线更新说明
 
-应用内“检测更新”会访问本仓库的 GitHub Releases 信息：
+Android 应用内“检查应用更新”会访问本仓库的 GitHub Releases 信息：
 
 ```text
 https://api.github.com/repos/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/latest
@@ -36,6 +36,10 @@ https://api.github.com/repos/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid
 当发现新版本时，应用会引导用户打开下载链接并手动安装 APK。
 
 Android 系统不允许普通应用静默安装 APK，用户需要在系统安装界面确认安装。
+
+## Windows 说明
+
+Windows 端当前提供 EXE 文件下载。若后续加入 Windows 在线更新，也可以继续复用本仓库 Releases。
 
 ## 适用范围
 
