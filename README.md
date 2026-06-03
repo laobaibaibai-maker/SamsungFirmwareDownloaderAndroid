@@ -21,13 +21,13 @@ https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/
 当前发布内容：
 
 ```text
-Android: SamsungFirmwareDownloaderAndroid-v0.1.3.apk
+Android: SamsungFirmwareDownloaderAndroid-v0.1.2.apk
 Windows: SamsungFirmwareDownloaderWindows-v1.1.exe
 ```
 
-## Android v0.1.3 更新日志
+## Android v0.1.3 待发布更新日志
 
-> Android v0.1.3 已发布到 GitHub Releases。
+> 已准备为下一版 Android Release 使用；当前 GitHub Releases 暂未发布 v0.1.3。
 
 - 新增固件更新提醒：支持在后台定时监控指定型号和地区。
 - 固件提醒支持开关、型号、地区、自定义检测间隔和上次检测时间显示。
