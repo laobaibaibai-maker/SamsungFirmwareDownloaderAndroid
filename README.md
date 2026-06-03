@@ -22,7 +22,7 @@ https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/
 
 ```text
 Android: SamsungFirmwareDownloaderAndroid-v0.1.2.apk
-Windows: SamsungFirmwareDownloaderWindows-v1.1.exe
+Windows: SamsungFirmwareDownloaderWindows-v1.2.exe
 ```
 
 ## Android v0.1.3 待发布更新日志
@@ -39,18 +39,27 @@ Windows: SamsungFirmwareDownloaderWindows-v1.1.exe
 - 修复历史记录清空和单条 `×` 删除失效问题。
 - 优化启动页与 App 图标。
 - 优化首页首卡布局：主题入口移动到标题右上角，状态信息单独显示。
-- 优化多线程设置布局：开关缩小并与“多线程下载”标题水平对齐。
+- 优化多线程设置布局：开关缩小、与“多线程下载”标题水平对齐，并跟随当前主题配色。
+- 多线程下载改为默认关闭，用户手动开启后才使用 Ketch 库进行多连接下载。
 - 优化固件下载写入性能，减少频繁 flush 带来的速度损耗。
-- 新增固件 8 线程分段下载，服务器不支持 Range 时自动回退单线程。
-- 支持多线程开关和 2 / 4 / 6 / 8 线程数选择。
-- 修复多线程暂停/继续后分段缓存恢复逻辑，继续下载按 part 文件累计恢复。
+- 支持多线程开关和 2 / 4 / 6 / 8 连接数选择。
+- 修复 Ketch 多线程暂停/继续状态恢复逻辑。
 - 修复暂停/取消时 `Socket closed` 被误判为多线程失败回退的问题。
 - 优化多线程下载速度统计，继续下载时只统计本轮新增数据，避免速度虚高。
-- Debug 包默认使用正式签名，方便覆盖安装正式版调试。
 - 优化部分固件下载兼容：BinaryInform 文件名字段兼容 `BINARY_FILE_NAME`、`BINARY_FILENAME`、`FILE_NAME`、`FILENAME`，并支持从 `MODEL_PATH` 兜底解析文件名。
 - 当三星只返回固件版本但未提供下载包信息时，改为明确提示“未提供下载包”，不再误导为缺少固件名。
 - 修复取消下载时第一次残留文件清理可能失败的问题：取消后等待下载线程退出、文件句柄释放后再统一清理。
 - 取消下载或任务失败后自动重置下载/解密进度和状态。
+
+## Windows v1.2 更新日志
+
+- 移除旧 Python/PyInstaller 后端，改为主程序内置纯 C# 固件引擎。
+- 修复下载会话与断点续传逻辑，BinaryInit 与文件下载复用同一个 FUS 会话。
+- 修复更新日志解析，只显示当前固件版本日志，不再混入历史版本。
+- 优化暂停/取消响应，会立即中断当前下载请求。
+- 优化自动解密：已存在的 ZIP 会在解密成功后安全替换，不再直接报错。
+- 增加可选多线程下载，支持选择 2 / 4 / 6 / 8 个 Range 连接；默认关闭以保持稳定。
+- 优化最新版本与历史版本识别，优先使用三星 SmartHistory，获取不到时再回退到 version.xml。
 
 ## Android 在线更新说明
 
