@@ -1,0 +1,8 @@
+{
+  "platform": "android",
+  "version": "v0.1.4",
+  "fileName": "SamsungFirmwareDownloaderAndroid-v0.1.4.apk",
+  "downloadUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/download/v0.1.4/SamsungFirmwareDownloaderAndroid-v0.1.4.apk",
+  "releaseUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/tag/v0.1.4",
+  "notes": "- Firmware monitoring now automatically fetches full firmware details when a new version is detected.\n- Added firmware BIT detection and displays BIT information for history versions.\n- Added downgrade availability detection for history firmware versions."
+}
