@@ -1,8 +1,8 @@
 {
   "platform": "windows",
-  "version": "v1.2",
-  "fileName": "SamsungFirmwareDownloaderWindows-v1.2.exe",
-  "downloadUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/download/v0.1.3/SamsungFirmwareDownloaderWindows-v1.2.exe",
-  "releaseUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/tag/v0.1.3",
-  "notes": "- Removed the old Python/PyInstaller backend and moved to a pure C# firmware engine inside the main program.\n- Fixed download session and resume logic so BinaryInit and file downloads reuse the same FUS session.\n- Fixed changelog parsing so only the current firmware version log is shown, no historical entries mixed in.\n- Improved pause/cancel response so the current download request stops immediately.\n- Improved auto-decrypt: existing ZIP files are safely replaced after successful decrypt instead of failing directly.\n- Added optional multithread downloads with 2/4/6/8 Range connections; disabled by default for stability.\n- Improved latest version and history detection: prefer Samsung SmartHistory, fall back to version.xml when unavailable."
+  "version": "v1.3",
+  "fileName": "SamsungFirmwareDownloaderWindows-v1.3.exe",
+  "downloadUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/download/v0.1.4/SamsungFirmwareDownloaderWindows-v1.3.exe",
+  "releaseUrl": "https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/tag/v0.1.4",
+  "notes": "- Added firmware BIT detection and downgrade availability display for history versions.\n- Added one-click Download Mode entry via Samsung USB AT command.\n- Fixed completion/decrypt/extract dialogs appearing at the top-left after minimized downloads."
 }

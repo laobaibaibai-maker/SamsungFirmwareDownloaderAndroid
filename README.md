@@ -21,9 +21,15 @@ https://github.com/laobaibaibai-maker/SamsungFirmwareDownloaderAndroid/releases/
 当前发布内容：
 
 ```text
-Android: SamsungFirmwareDownloaderAndroid-v0.1.3.apk
-Windows: SamsungFirmwareDownloaderWindows-v1.2.exe
+Android: SamsungFirmwareDownloaderAndroid-v0.1.4.apk
+Windows: SamsungFirmwareDownloaderWindows-v1.3.exe
 ```
+
+## Android v0.1.4 更新日志
+
+- 监控更新发现新版本后会自动拉取固件详情。
+- 加入版本 BIT 检测，历史版本可显示对应 BIT。
+- 加入版本可否降级判断，辅助判断历史固件可刷性。
 
 ## Android v0.1.3 更新日志
 
@@ -48,6 +54,13 @@ Windows: SamsungFirmwareDownloaderWindows-v1.2.exe
 - 当三星只返回固件版本但未提供下载包信息时，改为明确提示“未提供下载包”，不再误导为缺少固件名。
 - 修复取消下载时第一次残留文件清理可能失败的问题：取消后等待下载线程退出、文件句柄释放后再统一清理。
 - 取消下载或任务失败后自动重置下载/解密进度和状态。
+
+## Windows v1.3 更新日志
+
+- 加入版本 BIT 检测，历史版本可显示对应 BIT。
+- 加入版本可否降级判断，辅助判断历史固件可刷性。
+- 增加一键进入刷机模式按钮，通过三星 USB AT 指令进入刷机模式。
+- 修复下载时最小化，完成后恢复窗口时解密、解压、完成弹窗异常出现在显示器左上角的问题。
 
 ## Windows v1.2 更新日志
 
